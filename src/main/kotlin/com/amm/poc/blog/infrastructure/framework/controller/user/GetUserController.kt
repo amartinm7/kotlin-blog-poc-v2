@@ -25,9 +25,9 @@ class GetUserController(
 
 private fun GetUserServiceResponse.toResponse(): GetUserControllerResponse =
     GetUserControllerResponse(
-        login = "any@gmail.com",
-        firstName = "firstname",
-        lastName = "lastname",
-        description = "any-description",
-        id = "1"
+        login,
+        firstName,
+        lastName,
+        description,
+        id
     )
