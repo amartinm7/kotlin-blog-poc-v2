@@ -1,4 +1,4 @@
-package com.amm.poc.blog.application.service.user
+package com.amm.poc.blog.application.user.service
 
 import com.amm.poc.blog.domain.user.User
 import com.amm.poc.blog.domain.user.UserId

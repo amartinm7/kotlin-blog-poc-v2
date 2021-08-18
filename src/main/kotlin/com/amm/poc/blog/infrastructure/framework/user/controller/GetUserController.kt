@@ -1,8 +1,8 @@
 package com.amm.poc.blog.infrastructure.framework.user.controller
 
-import com.amm.poc.blog.application.service.user.GetUserService
-import com.amm.poc.blog.application.service.user.GetUserServiceRequest
-import com.amm.poc.blog.application.service.user.GetUserServiceResponse
+import com.amm.poc.blog.application.user.service.GetUserService
+import com.amm.poc.blog.application.user.service.GetUserServiceRequest
+import com.amm.poc.blog.application.user.service.GetUserServiceResponse
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping

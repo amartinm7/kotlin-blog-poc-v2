@@ -1,6 +1,6 @@
 package com.amm.poc.blog.infrastructure.framework.configuration
 
-import com.amm.poc.blog.application.service.user.GetUserService
+import com.amm.poc.blog.application.user.service.GetUserService
 import com.amm.poc.blog.infrastructure.framework.user.repository.UserRepository
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
