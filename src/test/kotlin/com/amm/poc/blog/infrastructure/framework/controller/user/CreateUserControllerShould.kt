@@ -1,4 +1,4 @@
-package com.amm.poc.blog
+package com.amm.poc.blog.infrastructure.framework.controller.user
 
 import com.amm.poc.blog.infrastructure.BlogApplication
 import com.amm.poc.blog.utls.matchers.JsonMatcher
