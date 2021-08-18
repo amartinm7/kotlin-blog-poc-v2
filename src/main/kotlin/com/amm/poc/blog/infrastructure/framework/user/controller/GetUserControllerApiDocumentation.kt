@@ -1,9 +1,8 @@
-package com.amm.poc.blog.infrastructure.framework.controller.user
+package com.amm.poc.blog.infrastructure.framework.user.controller
 
 import io.swagger.annotations.ApiOperation
 import io.swagger.annotations.ApiParam
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 
 interface GetUserControllerApiDocumentation {

@@ -1,4 +1,4 @@
-package com.amm.poc.blog.infrastructure.framework.controller.user
+package com.amm.poc.blog.infrastructure.framework.user.controller
 
 import com.amm.poc.blog.application.service.user.GetUserService
 import com.amm.poc.blog.application.service.user.GetUserServiceRequest
@@ -25,9 +25,9 @@ class GetUserController(
 
 private fun GetUserServiceResponse.toResponse(): GetUserControllerResponse =
     GetUserControllerResponse(
+        id,
         login,
         firstName,
         lastName,
-        description,
-        id
+        description
     )
