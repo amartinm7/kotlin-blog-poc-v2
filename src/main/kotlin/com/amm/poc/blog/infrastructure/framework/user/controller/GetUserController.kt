@@ -18,16 +18,19 @@ class GetUserController(
     override fun process(
         @PathVariable id: String,
         year: String
-    ): ResponseEntity<GetUserControllerResponse> = ResponseEntity.ok(
-        getUserService.execute(GetUserServiceRequest(id)).toResponse()
-    )
+    ): ResponseEntity<GetUserControllerResponse> =
+        getUserService.execute(GetUserServiceRequest(id))
+            ?.toResponse()
+            ?: ResponseEntity.notFound().build()
 }
 
-private fun GetUserServiceResponse.toResponse(): GetUserControllerResponse =
-    GetUserControllerResponse(
-        id,
-        login,
-        firstName,
-        lastName,
-        description
+private fun GetUserServiceResponse.toResponse() =
+    ResponseEntity.ok(
+        GetUserControllerResponse(
+            id,
+            login,
+            firstName,
+            lastName,
+            description
+        )
     )

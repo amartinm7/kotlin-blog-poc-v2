@@ -5,12 +5,12 @@ import com.amm.poc.blog.domain.user.UserId
 import com.amm.poc.blog.domain.user.repository.UserRepository
 
 class GetUserService(
-    val userRepository: UserRepository
+    private val userRepository: UserRepository
 ) {
     fun execute(
         request: GetUserServiceRequest
-    ): GetUserServiceResponse =
-        userRepository.findById(UserId(request.id)).toResponse()
+    ): GetUserServiceResponse? =
+        userRepository.findById(UserId(request.id))?.toResponse()
 }
 
 private fun User.toResponse(): GetUserServiceResponse =

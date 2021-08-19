@@ -4,5 +4,7 @@ import com.amm.poc.blog.domain.user.User
 import com.amm.poc.blog.domain.user.UserId
 
 interface UserRepository {
-    fun findById(id: UserId): User
+
+    fun findById(id: UserId): User?
+
 }

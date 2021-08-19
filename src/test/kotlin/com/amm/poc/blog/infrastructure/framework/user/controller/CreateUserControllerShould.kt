@@ -27,7 +27,17 @@ class CreateUserControllerShould {
     }
 
     @Test
-    fun `create a new user`() {
+    fun `return not found for not valid id`() {
+        RestAssured.given()
+            .`when`()
+            .param("year", "2020")
+            .get("/v1/users/notfound")
+            .then()
+            .statusCode(HttpURLConnection.HTTP_NOT_FOUND)
+    }
+
+    @Test
+    fun `return a user for a given id`() {
         RestAssured.given()
             .`when`()
             .param("year", "2020")
