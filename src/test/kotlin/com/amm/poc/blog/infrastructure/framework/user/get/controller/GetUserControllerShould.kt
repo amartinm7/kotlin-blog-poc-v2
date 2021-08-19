@@ -3,14 +3,12 @@ package com.amm.poc.blog.infrastructure.framework.user.get.controller
 import com.amm.poc.blog.infrastructure.framework.IntegrationShould
 import com.amm.poc.blog.utls.matchers.JsonMatcher
 import io.restassured.RestAssured
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-import org.springframework.boot.web.server.LocalServerPort
 import java.net.HttpURLConnection
 
-private const val EXPECTED_NEW_USER = "/expected/user1.json"
+private const val EXPECTED_NEW_USER = "/expected/getUser.json"
 
-class CreateUserControllerShould : IntegrationShould() {
+class GetUserControllerShould : IntegrationShould() {
 
     @Test
     fun `return not found for not valid id`() {
