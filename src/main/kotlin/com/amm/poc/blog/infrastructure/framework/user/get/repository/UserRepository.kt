@@ -17,4 +17,5 @@ class UserRepository : UserRepository {
             )
         }
 
+    override fun save(user: User): UserId = UserId("1")
 }

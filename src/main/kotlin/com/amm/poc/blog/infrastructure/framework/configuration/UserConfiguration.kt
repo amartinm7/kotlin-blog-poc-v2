@@ -17,5 +17,5 @@ class UserConfiguration {
     fun userRepository() = UserRepository()
 
     @Bean
-    fun saveUserService() = SaveUserService()
+    fun saveUserService(userRepository: IUserRepository) = SaveUserService(userRepository)
 }
