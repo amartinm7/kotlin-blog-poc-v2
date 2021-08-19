@@ -1,4 +1,4 @@
-package com.amm.poc.blog.infrastructure.framework.user.controller
+package com.amm.poc.blog.infrastructure.framework.user.get.controller
 
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.annotation.JsonProperty

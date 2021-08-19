@@ -1,4 +1,4 @@
-package com.amm.poc.blog.infrastructure.framework.user.controller
+package com.amm.poc.blog.infrastructure.framework.user.get.controller
 
 import io.swagger.annotations.ApiOperation
 import io.swagger.annotations.ApiParam

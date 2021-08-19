@@ -1,4 +1,4 @@
-package com.amm.poc.blog.infrastructure.framework.user.repository
+package com.amm.poc.blog.infrastructure.framework.user.get.repository
 
 import com.amm.poc.blog.domain.user.User
 import com.amm.poc.blog.domain.user.UserId

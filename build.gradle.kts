@@ -6,6 +6,14 @@ plugins {
     kotlin("jvm") version "1.5.21"
     kotlin("plugin.spring") version "1.5.21"
     kotlin("plugin.jpa") version "1.5.21"
+    kotlin("plugin.allopen") version "1.5.21" //entities should be open
+}
+
+// for JPA purposes: In order to make lazy fetching working as expected, entities should be open
+allOpen {
+    annotation("javax.persistence.Entity")
+    annotation("javax.persistence.Embeddable")
+    annotation("javax.persistence.MappedSuperclass")
 }
 
 // apply ("./gradle/build-integration-test.gradle")
