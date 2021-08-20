@@ -4,7 +4,6 @@ import org.hibernate.annotations.UpdateTimestamp
 import java.time.Instant
 import javax.persistence.Column
 import javax.persistence.Entity
-import javax.persistence.GeneratedValue
 import javax.persistence.Id
 import javax.persistence.Table
 
@@ -17,7 +16,7 @@ data class UserJPA(
     @field:Column(name = "first_name") val firstName: String,
     @field:Column(name = "last_name") val lastName: String,
     @field:Column(name = "description") val description: String
-){
+) {
     @field:UpdateTimestamp
     @field:Column(name = "timestamp")
     lateinit var timestamp: Instant
