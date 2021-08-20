@@ -1,0 +1,15 @@
+spring:
+  main:
+    banner-mode: "OFF"
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/myblogv2
+    username: admin
+    password: secret
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
