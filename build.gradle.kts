@@ -55,6 +55,7 @@ dependencies {
 	testImplementation("io.rest-assured:spring-mock-mvc:3.1.1")
     testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.13")
     testImplementation("net.javacrumbs.json-unit:json-unit-fluent:2.22.0")
+    testImplementation ("com.palantir.docker.compose:docker-compose-junit-jupiter:1.7.0")
 }
 
 

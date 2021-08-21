@@ -10,15 +10,7 @@ class UserRepository(
 ) : UserRepository {
 
     override fun findById(id: UserId): User? =
-        id.value.takeIf { it == "1" }?.let {
-            User(
-                id = UserId("1"),
-                login = "any@gmail.com",
-                firstName = "firstname",
-                lastName = "lastname",
-                description = "any-description"
-            )
-        }
+        jpaDatasource.findById(id.value).orElse(null)?.toUser()
 
     override fun save(user: User): User =
         jpaDatasource.save(user.toJPA()).toUser()

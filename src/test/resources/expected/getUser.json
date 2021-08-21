@@ -1,7 +1,7 @@
 {
   "login": "any@gmail.com",
-  "firstName": "firstname",
-  "lastName": "lastname",
+  "firstName": "firstName",
+  "lastName": "lastName",
   "description": "any-description",
   "id": "1"
 }
